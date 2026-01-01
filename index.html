@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Minecraft</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-image: url(Minecraft/minecraft-java\ copy.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 70px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #3ba55d;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    nav {
+      background-color: #2b2b2b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #3ba55d;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+    }
+
+    .post {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post h2 {
+      color: #3ba55d;
+    }
+
+    .sidebar {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    footer {
+      background-color: #2b2b2b;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        height: 200px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>⛏️Minecraft</h1>
+      <p>Info seputar Minecraft</p>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Sejarah</a>
+    <a href="about.html">Kenapa Minecraft Selalu Populer?</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="form.html">Form Komentar</a>  
+  </nav>
+  <div class="container">
+    <main>
+      <div class="post">
+        <h2>Apa Itu Minecraft dan Mengapa Game Ini Begitu Populer?</h2>
+        <p>
+          Minecraft adalah permainan sandbox yang dikembangkan oleh Markus Persson (Notch) dan dirilis oleh Mojang Studios pada tahun 2011. Dalam game ini, pemain dapat menjelajahi dunia yang terbuat dari blok, mengumpulkan sumber daya, membangun struktur, dan bertahan hidup melawan monster.
+        </p>
+      </div>
+
+      <div class="post">
+        <h2>Minecraft memiliki dua mode utama:</h2>
+        <p>
+          <li>Survival Mode, di mana pemain harus mengumpulkan sumber daya, mengatur kesehatan dan kelaparan, serta melawan musuh.</li>
+            <li>Creative Mode, di mana pemain bisa bebas membangun tanpa batasan sumber daya atau bahaya.</li>
+            <li>Selain itu, ada juga Adventure Mode, Spectator Mode, dan Hardcore Mode untuk tantangan tambahan.</li>
+        </p>
+      </div>
+  </div>
+</main>
+  <footer>
+    CopyRight - [<b>01SIFP013 251011700919 Jeremy Alfredo</b>]
+  </footer>
+<script>
+        var waktu=new Date();
+        var jam=waktu.getHours();
+        var menit=waktu.getMinutes();
+        document.write(jam);
+        document.write(":"+menit);
+        document.write("<br>")
+        var namaHari= new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
+        var Hari=waktu.getDay();
+        var namaBulan = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des");
+        var bulan = waktu.getMonth();
+        var tgl = waktu.getDate();
+        var Tahun = waktu.getFullYear();
+        document.write(namaHari[Hari]+","+tgl+" "+namaBulan[bulan]+" "+Tahun)
+</script>
+<script src="script.js"></script>
+</body>
+</html>

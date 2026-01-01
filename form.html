@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Minecraft</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+    form input,
+      form select,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #1e1e1e;
+        color: #f5f5f5;
+      }
+
+      form textarea {
+        resize: none;
+      }
+
+      form button {
+        background-color: #3ba55d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      form button:hover {
+      background-color: #2e8b57;
+      }
+
+    header {
+      background-image: url(Minecraft/minecraft-java\ copy.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 70px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #3ba55d;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    nav {
+      background-color: #2b2b2b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #3ba55d;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+    }
+
+    .post {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post h2 {
+      color: #3ba55d;
+    }
+
+    .sidebar {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    footer {
+      background-color: #2b2b2b;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        height: 200px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>⛏️Minecraft</h1>
+      <p>Info seputar Minecraft</p>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Sejarah</a>
+    <a href="about.html">Kenapa Minecraft Selalu Populer?</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="form.html">Form Komentar</a>
+  </nav>
+  <div class="post">
+  <h2>Form Komentar</h2>
+  <form>
+    <label>Nama:</label><br>
+    <input type="text" placeholder="Masukkan nama" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" placeholder="Masukkan email" required><br><br>
+    <label>Pilih Topik:</label><br>
+    <select>
+      <option>Survival</option>
+      <option>Creative</option>
+      <option>Redstone</option>
+      <option>Mods</option>
+    </select><br><br>
+    <label>Komentar:</label><br>
+    <textarea rows="5" placeholder="Tulis komentar..." required></textarea><br><br>
+    <button type="submit">Kirim</button>
+  </form>
+</div>
+  <footer>
+    CopyRight - [<b>01SIFP013 251011700919 Jeremy Alfredo</b>]
+  </footer>
+<script>
+        var waktu=new Date();
+        var jam=waktu.getHours();
+        var menit=waktu.getMinutes();
+        document.write(jam);
+        document.write(":"+menit);
+        document.write("<br>")
+        var namaHari= new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu");
+        var Hari=waktu.getDay();
+        var namaBulan = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agus", "Sep", "Okt", "Nov", "Des");
+        var bulan = waktu.getMonth();
+        var tgl = waktu.getDate();
+        var Tahun = waktu.getFullYear();
+        document.write(namaHari[Hari]+","+tgl+" "+namaBulan[bulan]+" "+Tahun)
+</script>
+<script src="script.js"></script>
+</body>
+</html>
